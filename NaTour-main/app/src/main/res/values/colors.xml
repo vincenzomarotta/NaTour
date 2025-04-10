@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#0CC315</color>
+    <color name="yellow">#FDD835</color>
+
+    <color name="opaque_black">#1C1C1C</color>
+
+    <color name="green_home">#8BC34A</color>
+    <color name="outlined_green" tools:override="true">#8BC34A</color>
+    <color name="green_home_variant">#387A3A</color>
+    <color name="dark_green">#19641B</color>
+    <color name="star">#fffb00</color>
+    <color name="shadowing_star">#6FFAEE05</color>
+
+    <color name="sender_green">#008A63</color>
+    <color name="receiver_green">#6a8a00</color>
+
+    <color name="darkish_green">#3DAE51</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="duskYellow">#ffb140</color>
+    <color name="grayBlue">#607b8a</color>
+    <color name="red">#f0555a</color>
+    <color name="livelyGreen">#0dbd82</color>
+    <color name="grey">#5C5C5C</color>
+    <color name="lightgrey">#8C8C8C</color>
+    <color name="disabled_state_gray">#FFAAAAAA</color>
+</resources>

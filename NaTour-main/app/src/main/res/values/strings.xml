@@ -1,0 +1,245 @@
+<resources>
+    <string name="app_name">NaTour</string>
+
+    <!-- Cognito Settings -->
+    <string name="user_pool_id">USER_POOL_ID</string>
+    <string name="identity_pool_id">IDENTITY_POOL_ID</string>
+    <string name="client_id">CLIENT_ID</string>
+    <string name="client_secret">CLIENT_SECRET</string>
+    <string name="domain">DOMAIN</string>
+
+    <!-- Errors -->
+    <string name="empty_email_error">Email must not be empty</string>
+    <string name="empty_password_error">Password must not be empty</string>
+    <string name="empty_name_error">Name must not be empty</string>
+    <string name="empty_surname_error">Surname must not be empty</string>
+    <string name="wrong_name_error">Name must contain only letters</string>
+    <string name="wrong_surname_error">Surname must contain only letters</string>
+    <string name="confirm_password_error">Passwords are not the same</string>
+    <string name="wrong_password_error">Password does not respect the appropriate requirement</string>
+    <string name="empty_confirm_password_error">Confirm password must not be empty</string>
+    <string name="empty_code_error">Code must not be empty</string>
+    <string name="empty_old_password">Old password must not be empty</string>
+    <string name="logout_not_done">Logout not done!</string>
+    <string name="check_connection">Please, check your connection</string>
+    <string name="no_connection_message">It seems that you don\'t have any active connection here.
+        \nNaTour requires internet connection to work, so check it before continuing and try again!</string>
+
+    <!-- Objects -->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="admin">Admin</string>
+    <string name="code">Code</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="remember_me">Remember Me</string>
+
+    <!-- Buttons -->
+    <string name="login">Login</string>
+    <string name="new_account">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">I FORGOT MY PASSWORD.</string>
+    <string name="change_password">Change Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="get_code">Get Code</string>
+    <string name="verify">Verify</string>
+    <string name="logout">Logout</string>
+    <string name="global_logout">Global logout</string>
+
+    <!-- Messages -->
+    <string name="verification_code_sent">Verification code sent, check your email.</string>
+    <string name="success_title">Done!</string>
+    <string name="registration_completed">Registration completed!\nLogin to use the application!</string>
+    <string name="password_changed">Password changed!\nLogin using the new password.</string>
+    <string name="logout_done">Logout done! Hope to see you soon!</string>
+    <string name="enter_email_for_code">Enter your email in order to get the verification code</string>
+    <string name="password_type">Your password must be at least 8 characters long \n and must contain at least a number, an uppercase letter \n and a symbol like  . ()=- _</string>
+    <string name="how_to_change_psw">Put your old password below and create a new password for your NaTour account!\nRemember:\nYour password must be at least 8 characters long \n and must contain at least a number, an uppercase letter \n and a symbol like  . ()=- _</string>
+
+    <!-- Home -->
+    <string name="home_tab">Home</string>
+    <string name="favourites_tab">Favorites</string>
+    <string name="visit_tab">To Visit</string>
+    <string name="my_itineraries_tab">My Itineraries</string>
+    <string name="messages_tab">Messages</string>
+    <string name="empty_list_my_itinerary">There are no created itineraries.</string>
+    <string name="empty_list_to_visit">There are no itineraries in your to visit list.</string>
+    <string name="empty_list_last_searched">There are no itineraries recently viewed.</string>
+    <string name="empty_list_favourites">There are no itineraries in your favourite list.</string>
+    <string name="empty_list_messages">There are no new messages.</string>
+    <string name="toolbar_help">Help</string>
+    <string name="toolbar_change_password">Change Password</string>
+    <string name="toolbar_logout">Logout</string>
+    <string name="toolbar_search">Search</string>
+    <string name="pop_menu_view_itinerary">View Itinerary</string>
+    <string name="pop_menu_remove_itinerary">Remove Itinerary</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="openNavDraw">Open Navigation Drawer</string>
+    <string name="closeNavDraw">Close Navigation Drawer</string>
+
+    <!-- Search Activity-->
+    <string name="searchedUser">Searched User</string>
+    <string name="searchedItineraries">Searched Itinerary</string>
+    <string name="hintSearch">Insert here to search</string>
+    <string name="applyFilters">Apply</string>
+    <string name="resetFilters">Reset</string>
+    <string name="accessToDisable">Accessibility for disabled people</string>
+    <string name="difficulty">Max Difficulty</string>
+    <string name="duration">Max Duration</string>
+    <string name="place">Place:</string>
+    <string name="chipPlace">Place</string>
+    <string name="chipDifficulty">Difficulty</string>
+    <string name="chipDuration">Duration</string>
+    <string name="chipAccess">Disabled</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Intro -->
+    <string name="firstScreenIntroTitle">SEE BEAUTIFUL PLACES</string>
+    <string name="firstScreenIntroDescription">Use this application to see a lot of beautiful places, in cities, woods, mountains...even the coast!</string>
+    <string name="secondScreenIntroTitle">REGISTER NEW ITINERARIES</string>
+    <string name="secondScreenIntroDescription">Register new itineraries using points, gps tracking or .gpx files.\nGive them name, a cool description and share them with everyone!\n(or not, it\'s up to you!)\nAdd itineraries to Favorite and To Visit List.</string>
+    <string name="thirdScreenIntroTitle">GO ON A NEW ADVENTURE</string>
+    <string name="thirdScreenIntroDescription">It\'s time. Take your backpack, your phone, your NaTour app and let\'s start this adventure!\nStay hydrated and have fun!</string>
+
+    <!-- -->
+    <string name="fragment_creation_itinerary_chooser_query">How do you want to create your itinerary?</string>
+    <string name="fragment_creation_itinerary_chooser_manually_button">Manually</string>
+    <string name="fragment_creation_itinerary_chooser_gpx_button">From .gpx file</string>
+    <string name="fragment_creation_itinerary_chooser_tracking_button">By GPS tracking</string>
+
+    <string name="itinerary_creator_manager_alert_info_title">Info</string>
+    <string name="itinerary_creator_manager_alert_warning_title">Warning</string>
+    <string name="itinerary_creator_manager_alert_file_not_found">File not found.</string>
+    <string name="itinerary_creator_manager_alert_file_not_valid">File not valid.</string>
+    <string name="itinerary_creator_manager_alert_empty_map_message">The map must have at least one point.</string>
+    <string name="itinerary_creator_manager_alert_route_selector_error">Error to open selected itinerary.</string>
+    <string name="itinerary_creator_manager_alert_geocoder_address_error">Information not found.</string>
+    <string name="itinerary_creator_manager_recorder_notify_text">Tracking recorder is active.</string>
+    <string name="itinerary_creator_manager_alert_tracking_title">Permits required</string>
+    <string name="itinerary_creator_manager_alert_tracking_message">Location permissions are required to use gps tracking.\nDo you want to continue?</string>
+    <string name="itinerary_creator_manager_alert_tracking_message_new_system">
+        To authorize the location go to settings> location> App access to location> NaTour and authorize the location.
+    </string>
+    <string name="itinerary_creator_manager_alert_info_location_service_title">Info</string>
+    <string name="itinerary_creator_manager_alert_info_location_service_message">
+        Some features require permission to use location services to enhance the user experience.\nLocation services are required for gps tracking.
+    </string>
+    <string name="itinerary_creator_manager_toast_location_disabled">Location services are not active by the system</string>
+    <string name="itinerary_creator_manager_update_share_position_success_toast">Position update success</string>
+    <string name="itinerary_creator_manager_update_share_position_error_toast">Current position update error</string>
+    <string name="itinerary_creator_manager_alert_empty_itinerary_error">Error: itinerary is empty</string>
+    <string name="itinerary_creator_manager_save_itinerary_success">The itinerary was successfully saved.</string>
+    <string name="itinerary_creator_manager_save_itinerary_failure">Failed to save itinerary.\nTry again or later.</string>
+    <string name="itinerary_creator_manager_update_itinerary_success">The itinerary has been successfully modified.</string>
+    <string name="itinerary_creator_manager_update_itinerary_failure">Failed to modify the itinerary.\nTry again or later.</string>
+    <string name="itinerary_creator_manager_network_not_available">Network not available</string>
+
+    <string name="fragment_editable_maps_next_button">Next</string>
+    <string name="fragment_editable_maps_alert_title">Warning</string>
+    <string name="fragment_editable_maps_alert_location_manager_message">
+        For a complete experience, please activate the location service.
+    </string>
+    <string name="fragment_editable_maps_alert_delete">Delete point</string>
+    <string name="fragment_editable_maps_alert_delete_point">Are you sure?</string>
+
+    <string name="fragment_itinerary_details_setter_title_edit_text">Title</string>
+    <string name="fragment_itinerary_details_setter_state_edit_text">State</string>
+    <string name="fragment_itinerary_details_setter_region_edit_text">Region</string>
+    <string name="fragment_itinerary_details_setter_city_edit_text">City</string>
+    <string name="fragment_itinerary_details_setter_get_info_button">Get info from internet</string>
+    <string name="fragment_itinerary_details_setter_accessibility_switch">Accessibility for disabled people</string>
+    <string name="fragment_itinerary_details_setter_private_switch">Private itinerary</string>
+    <string name="fragment_itinerary_details_setter_time_text_view">Estimated time:</string>
+    <string name="fragment_itinerary_details_setter_length_text_view">Route length:</string>
+    <string name="fragment_itinerary_details_setter_difficulty_text_view">Difficulty:</string>
+    <string name="fragment_itinerary_details_setter_difficulty_text_multi_line">Itinerary description</string>
+    <string name="fragment_itinerary_details_setter_save_button">Save</string>
+    <string name="fragment_itinerary_details_setter_title_length_error">Title can\'t be empty</string>
+    <string name="fragment_itinerary_details_setter_state_length_error">State can\'t be empty</string>
+    <string name="fragment_itinerary_details_setter_region_length_error">Region can\'t be empty</string>
+    <string name="fragment_itinerary_details_setter_city_length_error">City can\'t be empty</string>
+    <string name="fragment_itinerary_details_setter_description_length_error">Description can\'t be empty</string>
+
+    <string name="fragment_gpx_itinerary_chooser_query_text_view">Which itinerary do you want to choose?</string>
+    <string name="fragment_gpx_itinerary_chooser_next_button">Next</string>
+
+    <string name="fragment_tracking_editable_maps_next_button">Next</string>
+    <string name="fragment_tracking_editable_maps_alert_title">Warning</string>
+    <string name="fragment_tracking_editable_maps_alert_location_manager_message">
+        For a complete experience, please activate the location service.
+    </string>
+
+    <string name="itinerary_viewer_activity_toast_location_disabled">Location services are not active by the system</string>
+    <string name="itinerary_viewer_activity_alert_title">Warning</string>
+    <string name="itinerary_viewer_activity_alert_location_manager_message">
+        For a complete experience, please activate the location service.
+    </string>
+    <string name="itinerary_viewer_activity_alert_info_location_service_title">Info</string>
+    <string name="itinerary_viewer_activity_alert_info_location_service_message">
+        Some features require permission to use location services to enhance the user experience.\nLocation services are required for gps tracking.
+    </string>
+    <string name="itinerary_viewer_activity_alert_tracking_title">Permits required</string>
+    <string name="itinerary_viewer_activity_alert_tracking_message">Location permissions are required to use gps tracking.\nDo you want to continue?</string>
+    <string name="itinerary_viewer_activity_alert_tracking_message_new_system">
+        To authorize the location go to settings > location > App access to location > NaTour and authorize the location.
+    </string>
+    <string name="itinerary_viewer_activity_sharing_position_notify_text">Sharing position is active.</string>
+    <string name="itinerary_viewer_activity_get_itinerary_error">Unable to retrieve the requested itinerary.\nTry again or later.</string>
+    <string name="itinerary_viewer_activity_get_shared_position_list_error">Failed to get shared locations.\nPlease try again or later.</string>
+    <string name="itinerary_viewer_activity_update_share_position_success_toast">Position update success</string>
+    <string name="itinerary_viewer_activity_update_share_position_error_toast">Current position update error</string>
+    <string name="itinerary_viewer_activity_get_shared_position_list_error_toast">Unable to retrieve shared locations</string>
+    <string name="itinerary_viewer_activity_set_favorite_success_toast">Favorite successful update</string>
+    <string name="itinerary_viewer_activity_set_favorite_failure_toast">Update favorite error</string>
+    <string name="itinerary_viewer_activity_set_to_visit_success_toast">To visit successful update</string>
+    <string name="itinerary_viewer_activity_set_to_visit_failure_toast">Update to visit error</string>
+    <string name="itinerary_viewer_activity_no_location_permission_toast">No location permission</string>
+    <string name="itinerary_viewer_activity_confirmation_title">Confirmation</string>
+    <string name="itinerary_viewer_activity_delete_itinerary_confirmation_text">Are you sure?</string>
+    <string name="itinerary_viewer_activity_delete_itinerary_success">Delete success</string>
+    <string name="itinerary_viewer_activity_delete_itinerary_failure">Delete fail</string>
+    <string name="itinerary_viewer_activity_network_not_available">Network not available</string>
+    <string name="itinerary_viewer_activity_delete_shared_position_success">Location sharing stopped</string>
+    <string name="itinerary_viewer_activity_delete_shared_position_failure">Error stopping location sharing</string>
+
+    <string name="fragment_itinerary_viewer_text_view_author_label">Author: </string>
+    <string name="fragment_itinerary_viewer_text_view_location_label">Location: </string>
+    <string name="fragment_itinerary_viewer_text_view_duration_label">Duration: </string>
+    <string name="fragment_itinerary_viewer_text_view_distance_label">Distance: </string>
+    <string name="fragment_itinerary_viewer_text_view_difficulty_label">Difficulty: </string>
+    <string name="fragment_itinerary_viewer_text_view_disabled_people_label">Accessibility for disabled people</string>
+    <string name="fragment_itinerary_viewer_itinerary_update_alert_title">Update info</string>
+    <string name="fragment_itinerary_viewer_itinerary_update_alert_base_message">The itinerary was update by admin.\nDetail:\n</string>
+
+    <string name="fragment_view_maps_single_position_title">Single position</string>
+    <string name="fragment_view_maps_start_position_title">Start</string>
+    <string name="fragment_view_maps_finish_position_title">Finish</string>
+    <string name="message_splash_screen">Your free itinerary app.</string>
+    <string name="smtng_wrong_login">Something went wrong during login, try again or later.</string>
+    <string name="smtng_wrong">Something went wrong, try again or later.</string>
+    <string name="welcome_message">Welcome to NaTour</string>
+    <string name="settings">Settings</string>
+    <string name="about_to_logout">You\'re about to logout, are you sure you want to proceed?</string>
+    <string name="dialog_question">Are you sure?</string>
+    <string name="goodbye">Goodbye</string>
+    <string name="see_you_soon">Hope to see you soon!</string>
+    <string name="back">Back</string>
+    <string name="try_again">Try Again</string>
+    <string name="done">Done!</string>
+    <string name="password_changed_ok">Password changed!</string>
+    <string name="last_searched_fragment_delete_research">You are going to clear your last viewed list.\nAre you sure you want to proceed?</string>
+
+</resources>

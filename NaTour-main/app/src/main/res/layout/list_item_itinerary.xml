@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/single_list_item_title"
+        style="@style/MyListTitle"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black" />
+
+    <TextView
+        android:id="@+id/single_list_item_description"
+        style="@style/MyListItem"
+        android:includeFontPadding="false"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black" />
+
+</LinearLayout>
+

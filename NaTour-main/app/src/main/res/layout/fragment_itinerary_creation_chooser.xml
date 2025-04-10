@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ItineraryCreationChooser">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/queryTextView_creationItinerayChooser"
+            android:layout_width="333dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/fragment_creation_itinerary_chooser_query"
+            app:autoSizeMaxTextSize="40sp"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/manuallyButton_creationItinerayChooser"
+            style="@style/ButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:onClick="manualProcedure"
+            android:text="@string/fragment_creation_itinerary_chooser_manually_button"
+            android:textColor="@color/white"
+            app:icon="@drawable/room_icon"
+            app:layout_constraintBottom_toTopOf="@+id/gpxButton_creationItinerayChooser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/queryTextView_creationItinerayChooser" />
+
+        <Button
+            android:id="@+id/gpxButton_creationItinerayChooser"
+            style="@style/ButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:onClick="gpxProcedure"
+            android:text="@string/fragment_creation_itinerary_chooser_gpx_button"
+            app:icon="@drawable/upload_file_icon"
+            app:layout_constraintBottom_toTopOf="@+id/trackinButton_creationItinerayChooser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/manuallyButton_creationItinerayChooser" />
+
+        <Button
+            android:id="@+id/trackinButton_creationItinerayChooser"
+            style="@style/ButtonStyle"
+
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:onClick="trackingProcedure"
+            android:text="@string/fragment_creation_itinerary_chooser_tracking_button"
+            app:icon="@drawable/play_icon"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gpxButton_creationItinerayChooser" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

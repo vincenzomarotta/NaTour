@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_filters"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:letterSpacing="0.05"
+                    android:text="Filters"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/green_home_variant" />
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.chip.ChipGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipPlace"
+                                style="@style/Widget.MaterialComponents.Chip.Filter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/chipPlace"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipDuration"
+                                style="@style/Widget.MaterialComponents.Chip.Filter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/chipDuration" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipDifficulty"
+                                style="@style/Widget.MaterialComponents.Chip.Filter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/chipDifficulty" />
+
+                            <com.google.android.material.chip.Chip
+                                android:id="@+id/chipAccess"
+                                style="@style/Widget.MaterialComponents.Chip.Filter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/chipAccess" />
+
+                        </com.google.android.material.chip.ChipGroup>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:id="@+id/separating_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/green_home_variant" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/fragment_filters_place_textView"
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:paddingVertical="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="@string/place"
+                        android:textColor="@color/black">
+
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/fragment_filters_place_editText"
+                        android:layout_width="181dp"
+                        android:layout_height="39dp"
+                        android:layout_marginTop="10dp"
+                        android:autofillHints="no"
+                        android:background="@drawable/rounded_edittext"
+                        android:gravity="center"
+                        android:hint="Insert the place"
+                        android:inputType="text" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/separating_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/green_home_variant" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/fragment_filters_duration_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:paddingHorizontal="85dp"
+                            android:text="@string/duration"
+                            android:textColor="@color/black">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.slider.Slider
+                        android:id="@+id/fragment_filters_duration_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:stepSize="1"
+                        android:valueFrom="0"
+                        android:valueTo="10"
+                        app:thumbColor="@color/white"
+                        app:tickColor="@color/green"
+                        app:trackColorActive="@color/black"
+                        app:trackColorInactive="@color/lightgrey" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/separating_line3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/green_home_variant" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fragment_filters_difficultyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/difficulty"
+                        android:textColor="@color/black"></TextView>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar_filter"
+                        style="@style/RatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:forceDarkAllowed="false"
+                        android:numStars="5"
+                        android:paddingTop="7dp"
+                        android:rating="1"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/separating_line4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/green_home_variant" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    >
+
+                    <Switch
+                        android:id="@+id/accessibilitySwitch_filter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:minHeight="48dp"
+                        android:shadowColor="@color/white"
+                        android:text="@string/accessToDisable"
+
+                        android:theme="@style/SwitchStyleFilter"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/separating_line5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/green_home_variant" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="288dp"
+            android:layout_height="66dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+            <Button
+                android:id="@+id/fragment_filters_button_reset"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/resetFilters"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:backgroundTint="@color/red"
+                app:cornerRadius="25dp"
+                app:icon="@drawable/reset_icon"
+                app:iconTint="@color/white" />
+
+            <Button
+                android:id="@+id/fragment_filters_button_apply"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="@string/applyFilters"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:backgroundTint="@color/livelyGreen"
+                app:cornerRadius="25dp"
+                app:icon="@drawable/check_icon"
+                app:iconTint="@color/white" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

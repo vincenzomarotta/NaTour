@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ItineraryDetailsSetter"
+    tools:ignore="SpeakableTextPresentCheck">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/titleEditText_itineraryDetailsSetter"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:hint="@string/fragment_itinerary_details_setter_title_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            app:startIconDrawable="@drawable/title_icon"
+            app:endIconMode="clear_text"
+            android:importantForAutofill="no"
+            android:inputType="textShortMessage"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/stateEditText_itineraryDetailsSetter"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/fragment_itinerary_details_setter_state_edit_text"
+            android:importantForAutofill="no"
+            android:inputType="textShortMessage"
+            android:minHeight="48dp"
+            app:startIconDrawable="@drawable/state_icon"
+            app:endIconMode="clear_text"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleEditText_itineraryDetailsSetter">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/regionEditText_itineraryDetailsSetter"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/fragment_itinerary_details_setter_region_edit_text"
+            android:importantForAutofill="no"
+            android:inputType="textShortMessage"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            app:startIconDrawable="@drawable/region_icon"
+            app:endIconMode="clear_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stateEditText_itineraryDetailsSetter" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cityEditText_itineraryDetailsSetter"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="@string/fragment_itinerary_details_setter_city_edit_text"
+            android:importantForAutofill="no"
+            app:startIconDrawable="@drawable/city_icon"
+            app:endIconMode="clear_text"
+            android:inputType="textShortMessage"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/regionEditText_itineraryDetailsSetter" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/getInfoButton_itineraryDetailsSetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:onClick="getGeoData"
+            android:text="@string/fragment_itinerary_details_setter_get_info_button"
+            app:icon="@drawable/wifi_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cityEditText_itineraryDetailsSetter" />
+
+        <Switch
+            android:id="@+id/accessibilitySwitch_itineraryDetailsSetter"
+            android:theme="@style/SwitchStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:minHeight="48dp"
+            android:text="@string/fragment_itinerary_details_setter_accessibility_switch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getInfoButton_itineraryDetailsSetter"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/isPrivateSwitch_itineraryDetailsSetter"
+            android:theme="@style/SwitchStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:checked="true"
+            android:minHeight="48dp"
+            android:text="@string/fragment_itinerary_details_setter_private_switch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accessibilitySwitch_itineraryDetailsSetter"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <TextView
+            android:id="@+id/timeTextView_itineraryDetailsSetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="@string/fragment_itinerary_details_setter_time_text_view"
+            app:layout_constraintEnd_toStartOf="@+id/estimatedTime_itineraryDetailsSetter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/isPrivateSwitch_itineraryDetailsSetter" />
+
+        <RatingBar
+            android:theme="@style/RatingBar"
+            android:id="@+id/difficultyRatingBar_itineraryDetailsSetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:numStars="5"
+            android:rating="1"
+            android:stepSize="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/difficultyTextView_itineraryDetailsSetter"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/difficultyTextView_itineraryDetailsSetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/fragment_itinerary_details_setter_difficulty_text_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/routeLengthTextView_itineraryDetailsSetter" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/descriptionTextMultiLine_itineraryDetailsSetter"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="-108dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/fragment_itinerary_details_setter_difficulty_text_multi_line"
+            android:importantForAutofill="no"
+            app:startIconDrawable="@drawable/description_icon"
+            app:endIconMode="clear_text"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/difficultyRatingBar_itineraryDetailsSetter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/difficultyRatingBar_itineraryDetailsSetter"
+            tools:ignore="TextContrastCheck" >
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:id="@+id/saveButton_itineraryDetailsSetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:onClick="finalProcedure"
+            android:text="@string/fragment_itinerary_details_setter_save_button"
+            app:icon="@drawable/save_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionTextMultiLine_itineraryDetailsSetter" />
+
+        <TextView
+            android:id="@+id/estimatedTime_itineraryDetailsSetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/timeTextView_itineraryDetailsSetter"
+            app:layout_constraintTop_toBottomOf="@+id/isPrivateSwitch_itineraryDetailsSetter" />
+
+        <TextView
+            android:id="@+id/routeLengthTextView_itineraryDetailsSetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:text="@string/fragment_itinerary_details_setter_length_text_view"
+            app:layout_constraintEnd_toStartOf="@+id/effectiveRouteLength_itineraryDetailsSetter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeTextView_itineraryDetailsSetter" />
+
+        <TextView
+            android:id="@+id/effectiveRouteLength_itineraryDetailsSetter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/routeLengthTextView_itineraryDetailsSetter"
+            app:layout_constraintTop_toBottomOf="@+id/timeTextView_itineraryDetailsSetter" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

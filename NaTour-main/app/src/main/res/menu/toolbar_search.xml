@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/filter"
+        android:checkable="false"
+        android:icon="@drawable/filter_icon"
+        android:iconTint="@color/white"
+        android:title="Filters"
+        android:onClick="openFilters"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search"
+        android:checkable="false"
+        android:icon="@drawable/search_icon"
+        android:iconTint="@color/white"
+        android:title="Search"
+        android:onClick="startResearch"
+        app:showAsAction="always" />
+
+</menu>
