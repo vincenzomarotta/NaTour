@@ -1,0 +1,10 @@
+CREATE TABLE ItineraryList(
+	idList bigint NOT NULL,
+    id	bigint NOT NULL,
+    CONSTRAINT f7 FOREIGN KEY(idList) REFERENCES List(idList)
+		ON UPDATE CASCADE
+        ON DELETE CASCADE,
+    CONSTRAINT f8 FOREIGN KEY(id) REFERENCES Itinerary(id)
+		ON UPDATE CASCADE
+        ON DELETE CASCADE
+);
